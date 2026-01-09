@@ -1,10 +1,74 @@
-# Decoding-Grey-Matter
+# Decoding Grey Matter
 
-Decoding Grey Matter: large-scale analysis of brain cell morphometry to inform microstructural modeling of diffusion MR signals, is a work to extract morphological characteristics from neural reconstructions.
+**Decoding Grey Matter** is a framework for large-scale analysis of brain cell morphometry aimed at informing microstructural modeling of diffusion MRI (dMRI) signals.  
+The project focuses on extracting detailed morphological characteristics from neural reconstructions represented as connected graphs in **SWC format**.
 
-The frame work allows for the analysis of nueral cells, represented as connected graphs and saved as swc files, extracting structural, shape and topological characteristcs.
+This repository provides MATLAB tools for analyzing neuronal structure, shape, and topology from digital reconstructions, enabling quantitative studies of neural microarchitecture.
 
-Structural cahracteristics pertain to fundemental features of the cells, such as soma radius, dendritic branch length, and dentrite tortuosity.
+---
 
-The codes present here can be ued to analyse any reconstruction provided they are in the form of an swc file.
+## Project Overview
 
+Neural cell morphology plays a critical role in understanding brain microstructure and its influence on diffusion MRI signals. This framework enables:
+
+- Automated analysis of reconstructed neural cells  
+- Extraction of biologically meaningful morphometric features  
+- Support for large-scale datasets of neuronal reconstructions  
+
+Neurons are represented as connected graphs and processed directly from standard **SWC** morphology files.
+
+---
+
+## Features
+
+The framework extracts three main classes of morphometric descriptors:
+
+### 1. Structural Characteristics
+
+Fundamental biological features, including:
+
+- Soma radius  
+- Total dendritic length  
+- Branch length distributions  
+- Dendritic tortuosity  
+- Number of branches and bifurcations  
+
+### 2. Shape Characteristics
+
+Orientaional characteristics of cellular processes:
+
+- Ceullular fractional anisotropy  
+- Dentrite orientaion characterised by Watson distribution   
+
+### 3. Topological Characteristics
+
+Topological characteristics of cellular processes via persistence diagram:
+
+- Barcodes representing decomposition along path length
+- Comparison between persistence images
+
+## Input Format
+
+The framework operates on neuronal reconstructions stored in **SWC format**, a standard file format for representing neuronal morphology as connected trees.
+There are many open repositories hosting diverse array of cellular reconstructions such as Neuromorpho.org. 
+
+Any valid SWC reconstruction can be analyzed using this framework.
+
+
+## Requirements
+
+This project is implemented in **MATLAB** and depends on the following toolbox:
+
+- **TREES Toolbox for MATLAB**  
+  https://www.treestoolbox.org/
+
+Make sure the toolbox is installed and added to your MATLAB path before running the code.
+
+---
+
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/Decoding-Grey-Matter.git
