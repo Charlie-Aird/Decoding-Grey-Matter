@@ -75,7 +75,7 @@ Make sure the toolbox and Blender are installed and added to your MATLAB path be
 
 ```bash
 git clone https://github.com/Charlie-Aird/Decoding-Grey-Matter.git
-
+```
 ---
 
 ## Work flow
