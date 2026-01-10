@@ -71,7 +71,7 @@ Make sure the toolbox and Blender are installed and added to your MATLAB path be
 
 ## Getting Started
 
-1. Clone the repository:
+Clone the repository:
 
 ```bash
 git clone https://github.com/Charlie-Aird/Decoding-Grey-Matter.git
@@ -80,7 +80,7 @@ git clone https://github.com/Charlie-Aird/Decoding-Grey-Matter.git
 
 ## Work flow
 
-The main script has four main steps:
+1. The main script has four main steps:
 
 -**Clean trees**
  This step reads the SWC files present in the given folder and assess their integrity and removes any axonal component present within the reconstruction (this was opted for   due to the inconsistent pressence and quality of axons within the dataset)
@@ -95,4 +95,9 @@ The main script has four main steps:
  This step assess the angular distribution of the dentrites around their princible axis, returning the fractional anisotropy and Watson parameter.
 
 -**Analyse Topology**
- This step assess the dendrite topology through tropological persistence along path length from the soma.  
+ This step assess the dendrite topology through tropological persistence along path length from the soma. 
+
+ 2. Statistics are collated with the scripts make_stats.m and make_stats_shape.mat and saved to the folder complete_summary_staistics and can be plotted using the script StatsPlot.m found in the Images folder.
+
+ 3. Topological analysis is computed by creating persistence images for each species and cell type from the corresponding barcodes as well as visualised using the script DistancePlot.m found in the Images plot.  
+    
