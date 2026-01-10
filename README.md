@@ -86,7 +86,7 @@ The main script has four main steps:
  This step reads the SWC files present in the given folder and assess their integrity and removes any axonal component present within the reconstruction (this was opted for   due to the inconsistent pressence and quality of axons within the dataset)
 
 -**Analyse Soma**
- This step quantifies metrics assocciated with the soma, such as volume and surface area, of each cell
+ This step quantifies metrics assocciated with the soma, such as volume and surface area, of each cell.
 
 -**Analyse Dendrites**
  This step quantifies metrics assocciated with the dendrites, such brnach lngth, radius, and tortuosity.
