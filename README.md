@@ -57,12 +57,15 @@ Any valid SWC reconstruction can be analyzed using this framework.
 
 ## Requirements
 
-This project is implemented in **MATLAB** and depends on the following toolbox:
+This project is implemented in **MATLAB** and depends on the following:
 
 - **TREES Toolbox for MATLAB**  
   https://www.treestoolbox.org/
 
-Make sure the toolbox is installed and added to your MATLAB path before running the code.
+- **Blender**
+  https://www.blender.org/download/releases/2-79/
+
+Make sure the toolbox and Blender are installed and added to your MATLAB path before running the code.
 
 ---
 
@@ -71,4 +74,25 @@ Make sure the toolbox is installed and added to your MATLAB path before running 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/Decoding-Grey-Matter.git
+git clone https://github.com/Charlie-Aird/Decoding-Grey-Matter.git
+
+---
+
+## Work flow
+
+The main script has four main steps:
+
+-**Clean trees**
+ This step reads the SWC files present in the given folder and assess their integrity and removes any axonal component present within the reconstruction (this was opted for   due to the inconsistent pressence and quality of axons within the dataset)
+
+-**Analyse Soma**
+ This step quantifies metrics assocciated with the soma, such as volume and surface area, of each cell
+
+-**Analyse Dendrites**
+ This step quantifies metrics assocciated with the dendrites, such brnach lngth, radius, and tortuosity.
+
+-**Analyse Shape**
+ This step assess the angular distribution of the dentrites around their princible axis, returning the fractional anisotropy and Watson parameter.
+
+-**Analyse Topology**
+ This step assess the dendrite topology through tropological persistence along path length from the soma.  
