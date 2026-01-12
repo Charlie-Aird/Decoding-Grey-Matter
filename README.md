@@ -86,8 +86,10 @@ For demonstration purposes he folder contains 10 SWC files of pyramidal cells fo
 - Monkey [2]  
 - Mouse [3]  
 - Rat [4]  
-All reconstructions were obtained from the open repository Neuromorpho.org (https://neuromorpho.org/)
-once the SWC files are identified the script has four main steps:
+
+All reconstructions were obtained from the open repository Neuromorpho.org (https://neuromorpho.org/).
+
+Once the SWC files are identified the script has four main steps:
 
 -**Clean trees**
  This step reads the SWC files present in the given folder and assess their integrity and removes any axonal component present within the reconstruction (this was opted for   due to the inconsistent pressence and quality of axons within the dataset)
