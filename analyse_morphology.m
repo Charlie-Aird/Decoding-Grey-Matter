@@ -1,4 +1,4 @@
-%% Analyse Morphology 2
+%% Analyse Morphology
 
 clear all
 clc
@@ -15,8 +15,8 @@ startup
 warning('off')
 
 data_filename_list = {'Mouse_cells_for_TINS_review','Rat_cells_for_TINS_review', 'Monkey_cells_for_TINS_review', 'Human_cells_for_TINS_review'};
-speciesType = ["Mouse"]; %["Mouse", "Rat", "Monkey", "Human"];
-cellTypes = ["glutamatergic"];%["microglia", "astrocyte", "oligodendrocyte", "pyramidal", "granule", "basket", "purkinje", "gabaergic", "glutamatergic"];
+speciesType = ["Mouse", "Rat", "Monkey", "Human"];
+cellTypes = "Pyramidal";
 
 % Length over which shape characteristics assessed
 l = 10; % microns
@@ -27,7 +27,7 @@ for ff = 1:numel(speciesType)
     
 % find sub folders
 raw_data_filename = data_filename_list{ff};
-raw_data_path = '/cubric/data/c1441567/LargeScaleAnalysis2/data_for_TINS_review/';
+raw_data_path = '/cubric/data/c1441567/LargeScaleAnalysis/Reconstructions/';
 
 raw_data_folder = [raw_data_path raw_data_filename];
 % identify species
