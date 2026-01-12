@@ -80,7 +80,7 @@ git clone https://github.com/Charlie-Aird/Decoding-Grey-Matter.git
 
 ## Work flow
 
-1. The main script has four main steps:
+1. The main script, analyse_morphology.m, first identifies SWC files from the folder Reconstructions given the species and cell types being analysed. For demonstration purposes he folder contains 10 SWC files of pyramidal cells for Human, Monkey, Mouse, and Rat. ONe the SWC files are identified the script has four main steps:
 
 -**Clean trees**
  This step reads the SWC files present in the given folder and assess their integrity and removes any axonal component present within the reconstruction (this was opted for   due to the inconsistent pressence and quality of axons within the dataset)
