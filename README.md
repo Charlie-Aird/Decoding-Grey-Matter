@@ -81,7 +81,7 @@ git clone https://github.com/Charlie-Aird/Decoding-Grey-Matter.git
 ## Work flow
 
 1. The main script, analyse_morphology.m, first identifies SWC files from the folder Reconstructions given the species and cell types being analysed.
-For demonstration purposes he folder contains 10 SWC files of pyramidal cells for:
+For demonstration purposes the folder contains 10 SWC files of pyramidal cells for:
 - Human [1]  
 - Monkey [2]  
 - Mouse [3]  
