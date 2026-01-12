@@ -80,7 +80,14 @@ git clone https://github.com/Charlie-Aird/Decoding-Grey-Matter.git
 
 ## Work flow
 
-1. The main script, analyse_morphology.m, first identifies SWC files from the folder Reconstructions given the species and cell types being analysed. For demonstration purposes he folder contains 10 SWC files of pyramidal cells for Human, Monkey, Mouse, and Rat. ONe the SWC files are identified the script has four main steps:
+1. The main script, analyse_morphology.m, first identifies SWC files from the folder Reconstructions given the species and cell types being analysed.
+For demonstration purposes he folder contains 10 SWC files of pyramidal cells for:
+- Human [1]  
+- Monkey [2]  
+- Mouse [3]  
+- Rat [4]  
+All reconstructions were obtained from the open repository Neuromorpho.org (https://neuromorpho.org/)
+once the SWC files are identified the script has four main steps:
 
 -**Clean trees**
  This step reads the SWC files present in the given folder and assess their integrity and removes any axonal component present within the reconstruction (this was opted for   due to the inconsistent pressence and quality of axons within the dataset)
@@ -101,3 +108,16 @@ git clone https://github.com/Charlie-Aird/Decoding-Grey-Matter.git
 
  3. Topological analysis is computed by creating persistence images for each species and cell type from the corresponding barcodes as well as visualised using the script DistancePlot.m found in the Images plot.  
     
+## References
+
+[1] Human pyramidal cells — Neuron (2016)  
+https://doi.org/10.1016/j.neuron.2016.10.019  
+
+[2] Monkey pyramidal cells — Neuron (2016)  
+https://doi.org/10.1016/j.neuron.2016.02.038  
+
+[3] Mouse pyramidal cells — Journal of Neuroinflammation (2020)  
+https://doi.org/10.1186/s12974-020-01790-9  
+
+[4] Rat pyramidal cells — Journal of Comparative Neurology  
+https://doi.org/10.1002/cne.903620103  
